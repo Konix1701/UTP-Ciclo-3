@@ -1,0 +1,4 @@
+beans\Plan_turistico.class
+beans\Guia_turista.class
+servlets\PruebaServlet.class
+beans\Turista.class
