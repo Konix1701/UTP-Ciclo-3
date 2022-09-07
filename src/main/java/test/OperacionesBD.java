@@ -70,7 +70,6 @@ public class OperacionesBD {
             st.executeUpdate(sql);
         } catch (Exception ex)
         { 
-            
             System.out.println(ex.getMessage());
         } finally
         {
