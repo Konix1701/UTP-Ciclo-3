@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Plan Tour</title>
+        <link rel="icon" type="image/png" href="img/luna.png"/>
+        <title>Unicornios viajeros</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+        <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
         <div class="container-fluid p-5 btn-primary text-white text-center">
@@ -14,6 +18,7 @@
         </div>
 
         <ul class="nav nav-tabs">
+
             <li class="nav-item">
                 <a class="nav-link active desactive" aria-current="page" href="#">Inicio</a>
             </li>
@@ -27,78 +32,177 @@
                 <a class="nav-link" href="registro.html">Registro</a>
             </li>
         </ul>
-
-        <section class="vh-100">
-            <div class="container-fluid h-custom">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col-md-9 col-lg-6 col-xl-5">
-                        <img src="https://dam.ngenespanol.com/wp-content/uploads/2022/05/4-pasos-para-hacer-realidad-ese-viaje-que-no-has-podido-emprender.jpg"
-                             class="img-fluid" alt="Sample image">
-                    </div>
-
-                </div>
-
-                <div class="col-md-12 school-options-dropdown text-center">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Selecciona tu proximo destino
-                        </button>
-                        <ul class="dropdown-menu w-100">
-                            <li><a class="dropdown-item text-center" href="#">Popayán</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Pasto</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Medellín</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Cali</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Cartagena</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Guajira</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Bucaramanga</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Amazonas</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Bogotá</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Boyacá</a></li>
-                            <li><a class="dropdown-item text-center" href="#">Pasto</a></li><!-- comment -->
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card text-center">
-                                <div class="card-header">
-                                    <h3>Reviews</h3>
+        <div class="container py-3">
+            <div class="card my-5">
+                <div class="card-body">
+                    <div class="row m-3">
+                        <div class="col-md-6 bg-login-image"></div>
+                        <div class="col-md-6">
+                            <h1 class="h4 text-gray-900 my-3">Bienvenido</h1>
+                            <form id="form-login">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Muy recomendado</h5>
-                                    <p class="card-text">Todo fue muy organizado desde el inicio hasta el final. La comida estuvo deliciosa y los planes que nos ofrecieron estuvieron muy bacanos</p>
+                                <br>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="contraseña" placeholder="Contraseña" required>
                                 </div>
-                                <div class="card-footer text-muted">
-                                    2 days ago
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card text-center">
-                                <div class="card-header">
-                                    <h3>Tips para el viaje</h3>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <p class="card-text">Ropa holgada que cubra brazos y piernas, repelente, bloqueador solar, chaqueta impemeable ligera</p>
-                                </div>
-                            </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary btn.block" id="BTNENTRAR">Entrar</button>
+                                <hr>
+                            </form>
                         </div>
                     </div>
+                    <a href="registrer.html">¿Aún no tienes cuenta? Registrate!</a>
+                    <div id="login-error"class="alert alert-danger d-none" role="alert">Usuario y contraseña incorrectos</div>
                 </div>
+            </div>
+        </div>
 
-
-
-                <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary" style="background-color:green">
-                    <!-- Copyright -->
-                    <div class="text-white mb-1 mb-md-0">
-                        Copyright © 2022. All rights reserved.
+        <div class="container py-3">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+              
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Amazonas.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>AMAZONAS</h1>
+                            <p>La Amazonia destaca por ser una de las ecorregiones con mayor biodiversidad del mundo</p>
+                        </div>
                     </div>
-                    <!-- Copyright -->  
+                    <div class="carousel-item">
+                        <img src="img/Bogota.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>BOGOTA</h1>
+                            <p>Bogotá es el mayor centro industrial y comercial del país y el cuarto más importante de todo Latinoamérica.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Boyaca 2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>BOYACA</h1>
+                            <p>Boyacá es el departamento de Colombia que más hectáreas de páramo tiene</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/Bucaramanga.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>BUCARAMANGA</h1>
+                            <p>Visita Barichara, el pueblo colonial más bonito de Colombia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/Cali.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>CALI</h1>
+                            <p>La capital de la Salsa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/Cartagena.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>CARTAGENA</h1>
+                            <p>Un lugar donde las playas solo son el inicio de múltiples aventuras que puedes tener</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/Guajira.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>GUAJIRA</h1>
+                            <p>Donde el desierto se encuentra con el mar</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/Medellin.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>MEDELLIN</h1>
+                            <p>La piedra del Peñol,uno de los dos monolitos mas grandes del mundo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/Pasto.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>PASTO</h1>
+                            <p>El Santuario de las Lajas es una imponente obra que se alza en un abismo, sobre el cañón del río Guáitara, el lugar donde se apareció la virgen.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="img/Popayan.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>POPAYAN</h1>
+                            <p>Es llamada comúnmente “la ciudad blanca” por el color de las casas que adornan su arquitectura colonial.</p>
+                        </div>
+                    </div>
+
                 </div>
-        </section>
-    </body>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h3>Reviews</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Muy recomendado</h5>
+                            <p class="card-text">Todo fue muy organizado desde el inicio hasta el final. La comida estuvo deliciosa y los planes que nos ofrecieron estuvieron muy bacanos</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h3>Tips para el viaje</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Ropa holgada que cubra brazos y piernas, repelente, bloqueador solar, chaqueta impemeable ligera</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>                
+
+        <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary" style="background-color:green">
+            <!-- Copyright -->
+            <div class="text-white mb-1 mb-md-0">
+                Copyright © 2022. All rights reserved.
+            </div>
+            <!-- Copyright -->  
+        </div>
+    </section>
+
+<body>
 </html>
