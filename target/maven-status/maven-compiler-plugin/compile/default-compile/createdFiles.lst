@@ -1,4 +1,8 @@
 beans\Plan_turistico.class
+controller\UsuarioController.class
 beans\Guia_turista.class
+controller\IUsuarioController.class
 servlets\PruebaServlet.class
+test\OperacionesBD.class
 beans\Turista.class
+connection\DBConnection.class
