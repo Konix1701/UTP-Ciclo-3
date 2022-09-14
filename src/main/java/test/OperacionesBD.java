@@ -11,8 +11,8 @@ import java.sql.ResultSet;
 public class OperacionesBD {
 
     public static void main(String[] args) {
-        actualizarTurista("NayidK", "Nayidh");
-        listarTurista();
+        actualizarTurista("+13645834856", "JustinT");
+       listarTurista();
 
     }
 
@@ -61,9 +61,9 @@ public class OperacionesBD {
         }
     }
 
-    public static void actualizarTurista(String username, String nombre) {//revisar
+    public static void actualizarTurista(String telefono, String contrasena) {
         DBConnection con = new DBConnection();
-        String sql = "UPDATE turista SET nombre='" + nombre + "'WHERE username=" + username;
+        String sql = "UPDATE turista SET contrasena='" + contrasena + "'WHERE telefono=" + telefono;
         try
         {
             Statement st = con.getConnection().createStatement();
@@ -105,9 +105,9 @@ public class OperacionesBD {
         }
     }
 
-    public static void actualizarPlan(int id, Date fecha, String ciudad) {
+    public static void actualizarPlan(int id, String ciudad) {
         DBConnection con = new DBConnection();
-        String sql = "UPDATE plan_turistico SET fecha='" + fecha + "'ciudad='" + ciudad + "'WHERE id=" + id;
+        String sql = "UPDATE plan_turistico SET ciudad='" + ciudad + "'WHERE id=" + id;
         try
         {
             Statement st = con.getConnection().createStatement();

@@ -2,15 +2,15 @@
 package beans;
 public class Turista {
     private String username;
-    private String contraseña;
+    private String contrasena;
     private String nombre;
     private String apellido;
     private String telefono;
     private String correo;
 
-    public Turista(String username, String contraseña, String nombre, String apellido, String telefono, String correo) {
+    public Turista(String username, String contrasena, String nombre, String apellido, String telefono, String correo) {
         this.username = username;
-        this.contraseña = contraseña;
+        this.contrasena = contrasena;
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
@@ -25,12 +25,12 @@ public class Turista {
         this.username = username;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     public String getNombre() {
@@ -67,7 +67,7 @@ public class Turista {
 
     @Override
     public String toString() {
-        return "Turista{" + "username=" + username + ", contrase\u00f1a=" + contraseña + ", nombre=" + nombre + ", apellido=" + apellido + ", telefono=" + telefono + ", correo=" + correo + '}';
+        return "Turista{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellido=" + apellido + ", telefono=" + telefono + ", correo=" + correo + '}';
     }
     
     
