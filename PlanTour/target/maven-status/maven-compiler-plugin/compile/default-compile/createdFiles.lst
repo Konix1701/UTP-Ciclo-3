@@ -1,0 +1,6 @@
+beans\Plan_turistico.class
+beans\Guia_turista.class
+servlets\PruebaServlet.class
+test\OperacionesBD.class
+beans\Turista.class
+connection\DBConnection.class
