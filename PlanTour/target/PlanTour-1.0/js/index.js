@@ -7,7 +7,7 @@ $(document).ready(function () {
     $("#form-register").submit(function(event){
         
         event.preventDefault();
-        registarUsuario();
+        registrarUsuario();
     })
 });
 
@@ -36,7 +36,7 @@ function autenticarUsuario() {
     });
 }
 
-function registarUsuario(){
+function registrarUsuario(){
     let username=$("#input-username").val();
     let contrasena=$("#input-contrasena").val();
     let contrasenaConfirmacion=$("#input-contrasena-repeat").val();
