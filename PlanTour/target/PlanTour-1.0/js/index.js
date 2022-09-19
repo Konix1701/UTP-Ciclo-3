@@ -51,7 +51,7 @@ function registrarUsuario(){
             datatype:"html",
             url:"./ServletUsuarioRegister",
             data:$.param({
-                username:useername,
+                username:username,
                 contrasena:contrasena,
                 nombre:nombre,
                 apellido:apellido,
