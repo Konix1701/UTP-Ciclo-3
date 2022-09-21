@@ -36,15 +36,18 @@ public class ServletUsuarioRegister extends HttpServlet {
      * response)
      */
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
+
         UsuarioController usuario = new UsuarioController();
+
         String username = request.getParameter("username");
         String contrasena = request.getParameter("contrasena");
         String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
         String telefono = request.getParameter("telefono");
         String correo = request.getParameter("correo");
+
         String result = usuario.register(username, contrasena, nombre, apellido, telefono, correo);
 
         response.setContentType("text/html;charset=UTF-8");
@@ -55,14 +58,9 @@ public class ServletUsuarioRegister extends HttpServlet {
     }
 
     /**
-     * @param request
-     * @param response
-     * @throws javax.servlet.ServletException
-     * @throws java.io.IOException
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
      * response)
      */
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
         // TODO Auto-generated method stub

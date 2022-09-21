@@ -40,17 +40,17 @@ function autenticarUsuario() {
         }
     });
 }
+function registrarUsuario() {
 
-function registrarUsuario(){
-    let username=$("#input-username").val();
-    let contrasena=$("#input-contrasena").val();
-    let contrasenaConfirmacion=$("#input-contrasena-repeat").val();
-    let nombre=$("#input-nombre").val();
-    let apellido=$("#input-apellido").val();
-    let telefono=$("#input-telefono").val();
-    let correo=$("#input-correo").val();
-    
-if (contrasena == contrasenaConfirmacion) {
+    let username = $("#input-username").val();
+    let contrasena = $("#input-contrasena").val();
+    let contrasenaConfirmacion = $("#input-contrasena-repeat").val();
+    let nombre = $("#input-nombre").val();
+    let apellido = $("#input-apellido").val();
+    let telefono = $("#input-telefono").val();
+    let correo = $("#input-correo").val();
+
+    if (contrasena == contrasenaConfirmacion) {
 
         $.ajax({
             type: "GET",
@@ -61,10 +61,10 @@ if (contrasena == contrasenaConfirmacion) {
                 contrasena: contrasena,
                 nombre: nombre,
                 apellido: apellido,
-                telefono:telefono,
-                correo:correo
+                telefono: telefono,
+                correo: correo
             }),
- success: function (result) {
+            success: function (result) {
                 let parsedResult = JSON.parse(result);
 
                 if (parsedResult != false) {
