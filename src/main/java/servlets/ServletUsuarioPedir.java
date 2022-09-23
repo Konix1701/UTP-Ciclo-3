@@ -12,16 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 import controller.UsuarioController;
 
 /**
- * Servlet implementation class ServletUsuarioLogin
+ * Servlet implementation class ServletUsuarioPedir
  */
-@WebServlet("/ServletUsuarioLogin")
-public class ServletUsuarioLogin extends HttpServlet {
+@WebServlet("/ServletUsuarioPedir")
+public class ServletUsuarioPedir extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ServletUsuarioLogin() {
+    public ServletUsuarioPedir() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,18 +29,15 @@ public class ServletUsuarioLogin extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-        @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
 		UsuarioController usuario = new UsuarioController();
-		String username = request.getParameter("username");
-		String contrasena = request.getParameter("contrasena");
-		String result = usuario.login(username, contrasena);
 		
-		response.setContentType("text/html;charset=UTF-8");
+		String username = request.getParameter("username");
+		
+		String usuarioStr = usuario.pedir(username);
 		PrintWriter out = response.getWriter();
-		out.println(result);
+		out.println(usuarioStr);
 		out.flush();
 		out.close();
 	}
@@ -48,7 +45,6 @@ public class ServletUsuarioLogin extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-        @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

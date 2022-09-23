@@ -52,6 +52,10 @@ public class Plan_turistico {
     public String toString() {
         return "Plan_turistico{" + "id=" + id + ", username=" + username + ", fecha=" + fecha + ", ciudad=" + ciudad + '}';
     }
+
+    public void add(String toJson) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
     

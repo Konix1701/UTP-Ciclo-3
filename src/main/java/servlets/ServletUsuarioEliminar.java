@@ -12,16 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 import controller.UsuarioController;
 
 /**
- * Servlet implementation class ServletUsuarioLogin
+ * Servlet implementation class ServletUsuarioEliminar
  */
-@WebServlet("/ServletUsuarioLogin")
-public class ServletUsuarioLogin extends HttpServlet {
+@WebServlet("/ServletUsuarioEliminar")
+public class ServletUsuarioEliminar extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ServletUsuarioLogin() {
+    public ServletUsuarioEliminar() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,27 +29,26 @@ public class ServletUsuarioLogin extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-        @Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+                throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
 		UsuarioController usuario = new UsuarioController();
-		String username = request.getParameter("username");
-		String contrasena = request.getParameter("contrasena");
-		String result = usuario.login(username, contrasena);
 		
+		String username = request.getParameter("username");
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
-		out.println(result);
+		out.println(username);
 		out.flush();
 		out.close();
+		
+		
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-        @Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+                throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
