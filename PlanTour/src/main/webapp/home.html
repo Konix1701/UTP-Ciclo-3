@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <link rel="icon" type="image/png" href="img/luna.png"/>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <link href="css/main.css" rel="stylesheet">
+        <title>Inicio</title>
     </head>
     <body>
-        <div>TODO write content</div>
+        <nav class="navbar navbar-dark bd-dark">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <div id="user-data-profile">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="ajustes">Ajustes</span>
+                    </button>
+                    <div class="dropdown-menu" id="main-menu">
+                        <a id="mi-perfil-btn" class="dropdown-item" href="profile.html">Mi perfil</a>
+                        <a id="salir-btn" class="dropdown-item" href="login.html">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="p-4 d-flex justify-content-center">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Identificación del guía</th>
+                        <th scope="col" id="ordenar-ciudad" data-toogle="tooltip" data-placement="top" title="Ordenar por ciudad">Ciudad
+                            <span class="fas fa-sort" id="icono-ordenar"></span></th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Zona</th> 
+                        <th scope="col">Teléfono</th> 
+                        <th scope="col">Correo</th> 
+                        <th scope="col">Reservar</th>
+                    </tr>
+                </thead>
+                <tbody id="guias-tbody">
+                </tbody>
+            </table>
+        </main>
     </body>
 </html>

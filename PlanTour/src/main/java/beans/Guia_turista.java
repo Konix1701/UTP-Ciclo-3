@@ -2,6 +2,10 @@ package beans;
 
 public class Guia_turista {
 
+    public static void add(String toJson) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     private int id;
     private String nombre;
     private String apellido;
@@ -18,10 +22,6 @@ public class Guia_turista {
         this.zona = zona;
         this.telefono = telefono;
         this.correo = correo;
-    }
-
-    public Guia_turista() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public int getId() {
