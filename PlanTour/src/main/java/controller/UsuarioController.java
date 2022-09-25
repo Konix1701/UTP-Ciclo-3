@@ -29,11 +29,9 @@ public class UsuarioController implements IUsuarioController {
             {
                 String nombre = rs.getString("nombre");
                 String apellido = rs.getString("apellido");
-                String telefono = rs.getString("telefono");
                 String correo = rs.getString("correo");
-
-                Turista turista
-                        = new Turista(username, contrasena, nombre, apellido, telefono, correo);
+                String telefono = rs.getString("telefono");
+                Turista turista = new Turista(username, contrasena, nombre, apellido, correo, telefono);
                 return gson.toJson(turista);
             }
         } catch (Exception ex)
@@ -48,21 +46,21 @@ public class UsuarioController implements IUsuarioController {
     }
 
     @Override
-    public String register(String username, String contrasena, String nombre, String apellido, String telefono,
-            String correo) {
+    public String register(String username, String contrasena, String nombre, String apellido, String correo,
+            String telefono) {
 
         Gson gson = new Gson();
 
         DBConnection con = new DBConnection();
         String sql = "Insert into turista values('" + username + "', '" + contrasena + "', '" + nombre
-                + "', '" + apellido + "', '" + telefono + "', " + correo + ")";
+                + "', '" + apellido + "', '" + correo + "', " + telefono + ")";
 
         try
         {
             Statement st = con.getConnection().createStatement();
             st.executeUpdate(sql);
 
-            Turista turista = new Turista(username, contrasena, nombre, apellido, telefono, correo);
+            Turista turista = new Turista(username, contrasena, nombre, apellido, correo, telefono);
 
             st.close();
 
@@ -94,9 +92,9 @@ public class UsuarioController implements IUsuarioController {
                 String contrasena = rs.getString("contrasena");
                 String nombre = rs.getString("nombre");
                 String apellido = rs.getString("apellido");
-                String telefono = rs.getString("telefono");
                 String correo = rs.getString("correo");
-                Turista turista = new Turista(username, contrasena, nombre, apellido, telefono, correo);
+                String telefono = rs.getString("telefono");
+                Turista turista = new Turista(username, contrasena, nombre, apellido, correo, telefono);
                 return gson.toJson(turista);
             }
 
@@ -111,14 +109,14 @@ public class UsuarioController implements IUsuarioController {
     @Override
     public String modificar(String username, String nuevaContrasena,
             String nuevoNombre, String nuevosApellido,
-            String nuevoTelefono, String nuevoCorreo) {
+            String nuevoCorreo, String nuevoTelefono) {
 
         DBConnection con = new DBConnection();
 
         String sql = "Update turista set contrasena = '" + nuevaContrasena
                 + "', nombre = '" + nuevoNombre + "', "
-                + "apellido = '" + nuevosApellido + "', telefono = '"
-                + nuevoTelefono + "', correo = " + nuevoCorreo ;
+                + "apellido = '" + nuevosApellido + "', correo = '"
+                + nuevoCorreo + "', telefono = " + nuevoTelefono ;
 
         sql += " where username = '" + username + "'";
 

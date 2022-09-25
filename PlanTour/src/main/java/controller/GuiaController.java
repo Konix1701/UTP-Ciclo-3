@@ -33,9 +33,9 @@ public class GuiaController implements IGuiaController {
             while (rs.next())
             {
                 int id = rs.getInt("Id");
-                String ciudad = rs.getString("ciudad");
                 String nombre = rs.getString("nombre");
                 String apellido = rs.getString("apellido");
+                String ciudad = rs.getString("ciudad");
                 String zona = rs.getString("zona");
                 String telefono = rs.getString("telefono");
                 String correo = rs.getString("correo");

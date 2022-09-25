@@ -94,7 +94,6 @@ function reservarGuia(id) {
         data: $.param({
             id: id,
             username: username
-
         }),
         success: function (result) {
             let parsedResult = JSON.parse(result);

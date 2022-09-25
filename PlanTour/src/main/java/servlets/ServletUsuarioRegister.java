@@ -45,10 +45,10 @@ public class ServletUsuarioRegister extends HttpServlet {
         String contrasena = request.getParameter("contrasena");
         String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
-        String telefono = request.getParameter("telefono");
         String correo = request.getParameter("correo");
+        String telefono = request.getParameter("telefono");
 
-        String result = usuario.register(username, contrasena, nombre, apellido, telefono, correo);
+        String result = usuario.register(username, contrasena, nombre, apellido, correo, telefono);
 
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();

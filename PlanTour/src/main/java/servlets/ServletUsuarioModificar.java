@@ -38,8 +38,8 @@ public class ServletUsuarioModificar extends HttpServlet {
 		String contrasena = request.getParameter("contrasena");
 		String nombre = request.getParameter("nombre");
 		String apellido = request.getParameter("apellido");
-		String telefono = request.getParameter("telefono");
 		String correo = request.getParameter("correo");
+		String telefono = request.getParameter("telefono");
 		
 		
 		String usuarioStr = usuario.modificar(username,contrasena,nombre,apellido,

@@ -5,16 +5,16 @@ public class Turista {
     private String contrasena;
     private String nombre;
     private String apellido;
-    private String telefono;
     private String correo;
+    private String telefono;
 
-    public Turista(String username, String contrasena, String nombre, String apellido, String telefono, String correo) {
+    public Turista(String username, String contrasena, String nombre, String apellido, String correo, String telefono) {
         this.username = username;
         this.contrasena = contrasena;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.telefono = telefono;
         this.correo = correo;
+        this.telefono = telefono;
     }
 
     public String getUsername() {
@@ -49,14 +49,6 @@ public class Turista {
         this.apellido = apellido;
     }
 
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
     public String getCorreo() {
         return correo;
     }
@@ -65,11 +57,17 @@ public class Turista {
         this.correo = correo;
     }
 
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     @Override
     public String toString() {
-        return "Turista{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellido=" + apellido + ", telefono=" + telefono + ", correo=" + correo + '}';
+        return "Turista{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellido=" + apellido + ", correo=" + correo + ", telefono=" + telefono + '}';
     }
-    
-    
-    
+
 }
