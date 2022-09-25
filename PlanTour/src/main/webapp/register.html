@@ -21,9 +21,37 @@
         <link rel="icon" type="image/png" href="img/luna.png"/>
     </head>
     <body>
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="login.html">Crear cuenta - Renta de peliculas</a>
-        </nav>
+        <div class="container-fluid p-5 btn-primary text-white text-center">
+            <h1>Unicornios Viajeros</h1>
+        </div>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="register.html">Registro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="recomendaciones.html">Recomendaciones Generales</a>
+            </li>
+        </ul>
+        
+        <div class="row">
+            <div class="col">
+                <div class="container-fluid h-custom">
+                    <div class="row d-flex justify-content-center align-items-center h-100 w-100">
+                        <div class="col-md-9 col-lg-6 col-xl-5">
+                            <img src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/ihyqkkz9vant7fb3h6xy"
+                                 class="img-fluid" alt="Sample image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         <main class="p-4 d-flex justify-content-center">
             <div class="card sizeDiv">
                 <div class="card-body">
@@ -58,7 +86,7 @@
                             <label for="input-telefono">Telefono</label>
                             <input type="text" class="form-control" id="input-telefono" placeholder="Telefono" required>
                         </div>
-                            <input type="submit" class="btn btn-primary" id="register-btn" value="Registrar usuario" />
+                        <input type="submit" class="btn btn-primary" id="register-btn" value="Registrar usuario" />
                     </form>
                     <div id="register-error" class="alert alert-danger d-none" role="alert"></div>
                     <a href="login.html">¿Ya tienes cuenta? Iniciar sesión</a>
