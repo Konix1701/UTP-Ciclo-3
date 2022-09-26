@@ -6,8 +6,8 @@ import java.sql.DriverManager;
 
 public class DBConnection {
     Connection connection;
-    static String bd="proyecto_tour";
-    static String port="3306";
+    static String bd="plantour";
+    static String port="3307";
     static String login="root";
     static String password="admin";
 
